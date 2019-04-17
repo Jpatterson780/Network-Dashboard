@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="author" content="Josh Patterson">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre" rel="stylesheet">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="css/reset.css">     <!-- Reset CSS-->
+        <link rel="stylesheet" href="css/style.css">     <!-- Custom CSS-->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    </head>
+
+    <body class="background">
+        <div class="container">
+            <div class="title-bar">
+                <div class="title">
+                    Network Dashboard
+                </div>
+
+                <div class="menu-bar">
+                    <div class="menu-button">
+                        <a class="menu" href="index.html">Home</a>
+                    </div>
+
+                    <div class="menu-button">
+                        <a class="menu" href="topology.html">Topology</a>
+                    </div>
+
+                    <div class="menu-button">
+                        <a class="menu" href="vlans-and-ips.html">VLANS and IPs</a>
+                    </div>
+
+                    <div class="menu-button">
+                        <a class="menu" href="status.html">Status</a>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="main-content">
+                <div class="table-container">
+                    <div class="content-heading">
+                        Quick Links
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Device</th>
+                            <th>Service</th>
+                        </tr>
+                        <tr>
+                            <td>webserver</td>
+                            <td><a class="table" href="http://patterson.engineer" target="_blank">Apache</a></td>
+                        </tr>
+                        <tr>
+                            <td>PlexPi</td>
+                            <td><a class="table" href="http://192.168.1.182:32400" target="_blank">Plex</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a class="table" href="https://192.168.1.182:10000" target="_blank">Webmin</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a class="table" href="https://192.168.1.182:8443" target="_blank">UniFi Controller</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a class="table" href="smb://192.168.1.182">Samba</a></td>
+                        </tr>
+                        <tr>
+                            <td>dns1</td>
+                            <td><a class="table" href="http://192.168.1.184/admin" target="_blank">Pi-hole</a></td>
+                        </tr>
+                        <tr>
+                            <td>dns2</td>
+                            <td><a class="table" href="http://192.168.1.183/admin" target="_blank">Pi-hole</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a class="table" href="http://192.168.1.183:631" target="_blank">CUPS</a></td>
+                        </tr>
+                        <tr>
+                            <td>USG-Pro</td>
+                            <td><a class="table" href="http://192.168.1.1" target="_blank">USG Configuration</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="text-container">
+                    <div class="content-heading">
+                        About
+                    </div>
+                    <div class="text-box">
+                        A simple Network Dashboard website with quick links to webpages for
+                        network hardware, as well as some other informational pages.
+                        <br><br>
+                        <strong>Topology</strong> offers a visual map of the rack layout as well as
+                        the network layout.
+                        <br><br>
+                        <strong>VLANs and IPs</strong> describes the IP scopes, firewall rules,
+                        and purpose of each VLAN. Additionally, this page details any fixed or static
+                        IP addresses used in the network.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
