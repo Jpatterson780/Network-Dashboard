@@ -42,9 +42,81 @@
                 <div class="clearfix"></div>
             </div>
             <div class="main-content">
-                <p class="under-construction">
-                    This page is still under contruction!
-                </p>
+                <h1 class="vlans">Subnets</h1>
+                <div class="network-container">
+                    <h3>LAN-admin</h3>
+                    <p class="vlans">
+                        <br>
+                        <strong>Subnet:</strong> 192.168.1.1/24 <br>
+                        <strong>Domain:</strong> admin.local <br>
+                        <strong>DHCP Range:</strong> .6 - .180 <br>
+                        <strong>VLAN:</strong> None
+                        <br> <br>
+                        Main subnet, and parent network for all Wireless Networks.
+                        Clients on this subnet have full access to devices on any local subnet.
+                    </p>
+                    <table class="vlans">
+                        <tr>
+                            <th>Device</th>
+                            <th>IP Address</th>
+                            <th>IP Type</th>
+                        </tr>
+                        <tr>
+                            <td>Philips-hue</td>
+                            <td>192.168.1.9</td>
+                            <td>Server - Fixed</td>
+                        </tr>
+                        <tr>
+                            <td>Joshs-Mac-mini</td>
+                            <td>192.168.1.14</td>
+                            <td>Server - Fixed</td>
+                        </tr>
+                        <tr>
+                            <td>WindowsServer</td>
+                            <td>192.168.1.181</td>
+                            <td>Client - Static</td>
+                        </tr>
+                        <tr>
+                            <td>UniFi Controller</td>
+                            <td>192.168.1.182</td>
+                            <td>Client - Static</td>
+                        </tr>
+                        <tr>
+                            <td>DNS 2</td>
+                            <td>192.168.1.183</td>
+                            <td>Client - Static</td>
+                        </tr>
+                        <tr>
+                            <td>DNS 1</td>
+                            <td>192.168.1.184</td>
+                            <td>Client - Static</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="network-container">
+                    <h3>LAN-public</h3>
+                    <p class="vlans">
+                        <br>
+                        <strong>Subnet:</strong> 10.0.0.1/24 <br>
+                        <strong>Domain:</strong> public.local <br>
+                        <strong>DHCP Range:</strong> .6 - .254 <br>
+                        <strong>VLAN:</strong> 10
+                        <br> <br>
+                        Subnet for apache server. Limited access to devices on other local subnets.
+                    </p>
+                    <table class="vlans">
+                        <tr>
+                            <th>Device</th>
+                            <th>IP Address</th>
+                            <th>IP Type</th>
+                        </tr>
+                        <tr>
+                            <td>Web Server</td>
+                            <td>10.0.0.2</td>
+                            <td>Server - Fixed</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
     </div>
     </body>

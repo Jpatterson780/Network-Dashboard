@@ -4,11 +4,17 @@
 /* font-family: 'Open Sans', sans-serif; */
 /* Wet Asphalt #34495e */
 /* Midnight Blue #2c3e50 */
+/* Silver #bdc3c7 */
+/* Asbestos #7f8c8d */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
+    display: block;
 }
 
 a.table{
@@ -24,10 +30,22 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     text-align: center;
+    color: #7f8c8d;
+    line-height: 1.5;
 }
 
 strong {
     font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+}
+
+p.vlans {
+    width: 20%;
+    float: left;
+    margin: 0px 20px 0px 20px;
 }
 
 .background {
@@ -80,7 +98,7 @@ strong {
     overflow: auto;
 }
 
-.table-container {
+.index-table-container {
     padding: 30px 110px 30px 110px;
     width: 40%;
     justify-content: center;
@@ -105,11 +123,11 @@ th {
     font-weight: bold;
 }
 
-tr{
+tr.index{
     border-bottom: solid 1px #808080;
 }
 
-tr:nth-child(1) {
+tr:nth-child(1).index {
     border-bottom: solid 3px #808080;
 }
 
@@ -117,9 +135,19 @@ tr:nth-child(3),tr:nth-child(4),tr:nth-child(5),tr:nth-child(8) {
     border-bottom: none;
 }
 
+tr:nth-child(1) {
+    border-bottom: 1px solid #808080;
+}
+
 table {
     width: 100%;
     border: solid 3px #808080;
+}
+
+table.vlans {
+    float: left;
+    width: 50%;
+    border: 1px solid #808080;
 }
 
 .under-construction {
@@ -129,7 +157,7 @@ table {
     line-height: 80vh;
 }
 
-.text-container {
+.index-text-container {
     float: left;
     padding: 30px 110px 30px 110px;
     width: 60%;
@@ -139,5 +167,67 @@ table {
     text-align: left;
     font-size: 14px;
     padding: 10px;
-    line-height: 1.5;
+}
+
+.projects-column {
+    width: 25%;
+    padding: 30px;
+    float: left;
+    text-align: left;
+}
+
+ul {
+    list-style-type: circle;
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul ul {
+    margin-left: 1.5em;
+}
+
+li {
+    margin-top: 10px;
+}
+
+li:first-child {
+    border-top: 0px;
+}
+
+li.complete {
+    list-style-type: disc;
+}
+
+.thin-underline {
+    border-bottom: 1px solid #808080;
+}
+
+.network-container {
+    margin: 0px 10px 10px 10px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+    text-align: left;
+    padding: 15px 15px 15px 30px;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+h1.vlans {
+    margin: 10px auto 5px 30px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Proza Libre', sans-serif;
 }
