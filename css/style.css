@@ -81,13 +81,14 @@ p.vlans {
 
 .menu-bar {
     float: left;
+    display: flex;
     width: 60%;
     padding-top: 20px;
 }
 
 .menu-button {
     float: left;
-    width: 20%;
+    flex: 1 1 auto;
 }
 
 .main-content {
@@ -123,20 +124,12 @@ th {
     font-weight: bold;
 }
 
-tr.index{
+tr.tableBreak{
     border-bottom: solid 1px #808080;
 }
 
-tr:nth-child(1).index {
+tr:nth-child(1).tableBreak {
     border-bottom: solid 3px #808080;
-}
-
-tr:nth-child(3),tr:nth-child(4),tr:nth-child(5),tr:nth-child(8) {
-    border-bottom: none;
-}
-
-tr:nth-child(1) {
-    border-bottom: 1px solid #808080;
 }
 
 table {
